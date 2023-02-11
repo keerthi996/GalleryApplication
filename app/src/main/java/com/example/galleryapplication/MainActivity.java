@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-    String names[]={"cat","cat1","cat2","dog","dog1","dog2","camel","camel1","camel2","horse","horse1","horse2","parrot","bird","blue_bird","rabbit","tiger","white_tiger"};
+    String names[]={"panda","cute_dog","cute_monkey","elephant","white_tiger","black_bird","black_bird","monkey","yellow_bird","tiger","cat2","dog1"};
     String id[]={""};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,59 +17,41 @@ public class MainActivity extends AppCompatActivity {
     public void viewImage(View view ){
         int pos=-1;
         switch(view.getId()){
-            case R.id.b1:
+            case R.id.im1:
                 pos=0;
                 break;
-            case R.id.b2:
+            case R.id.im2:
                 pos=1;
                 break;
-            case R.id.b3:
+            case R.id.im3:
                 pos=2;
                 break;
-            case R.id.b4:
+            case R.id.im4:
                 pos=3;
                 break;
-            case R.id.b5:
+            case R.id.im5:
                 pos=4;
                 break;
-            case R.id.b6:
+            case R.id.im6:
                 pos=5;
                 break;
-            case R.id.b7:
+            case R.id.im7:
                 pos=6;
                 break;
-            case R.id.b8:
+            case R.id.im8:
                 pos=7;
                 break;
-            case R.id.b9:
+            case R.id.im9:
                 pos=8;
                 break;
-            case R.id.b10:
+            case R.id.im10:
                 pos=9;
                 break;
-            case R.id.b11:
+            case R.id.im11:
                 pos=10;
                 break;
-            case R.id.b12:
+            case R.id.im12:
                 pos=11;
-                break;
-            case R.id.b13:
-                pos=12;
-                break;
-            case R.id.b14:
-                pos=13;
-                break;
-            case R.id.b15:
-                pos=14;
-                break;
-            case R.id.b16:
-                pos=15;
-                break;
-            case R.id.b17:
-                pos=16;
-                break;
-            case R.id.b18:
-                pos=17;
                 break;
         }
         Intent intent = new Intent(MainActivity.this,MainActivity1.class);

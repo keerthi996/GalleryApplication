@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class MainActivity1 extends AppCompatActivity {
-    int images[]={R.drawable.cat,R.drawable.cat1,R.drawable.cat2,R.drawable.dog,R.drawable.dog1,R.drawable.dog2,R.drawable.camel,R.drawable.camel1,R.drawable.camel2,R.drawable.horse,R.drawable.horse1,R.drawable.horse2,R.drawable.parrot,R.drawable.bird,R.drawable.blue_bird,R.drawable.rabbit,R.drawable.tiger,R.drawable.white_tiger};
+    int images[]={R.drawable.panda,R.drawable.cute_dog,R.drawable.cute_monkey,R.drawable.elephant,R.drawable.white_tiger,R.drawable.black_bird,R.drawable.black_bird,R.drawable.monkey,R.drawable.yellow_bird,R.drawable.tiger,R.drawable.cat2,R.drawable.dog1};
     int i=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class MainActivity1 extends AppCompatActivity {
         iv.setImageResource(images[i]);
         i++;
 
-        if(i==17)
+        if(i==11)
             i=0;
     }
     public void changeBackgroundToPrev(View view){
@@ -38,7 +38,7 @@ public class MainActivity1 extends AppCompatActivity {
         i--;
 
         if(i==0)
-            i=17;
+            i=11;
     }
 
 }

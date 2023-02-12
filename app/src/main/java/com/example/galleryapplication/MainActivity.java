@@ -53,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.im12:
                 pos=11;
                 break;
+            case R.id.im13:
+                pos=12;
+                break;
         }
         Intent intent = new Intent(MainActivity.this,MainActivity1.class);
         intent.putExtra("name",names[pos]);
